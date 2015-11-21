@@ -2,7 +2,7 @@
   "name": "vscode-standard-format",
   "displayName": "JavaScript Standard Format",
   "description": "Converts your code into Standard JavaScript Format",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "chenxsan",
   "license": "MIT",
   "bugs": {
@@ -13,6 +13,7 @@
   "categories": [
     "Languages"
   ],
+  "icon": "standard_icon.svg",
   "repository": {
     "type": "git",
     "url": "https://github.com/chenxsan/vscode-standard-format/"
