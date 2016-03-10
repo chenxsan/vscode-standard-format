@@ -40,4 +40,9 @@ suite("Extension Tests", () => {
 		var expected = "var a = 5\n";
 		assertFormatter(content, expected, done);
 	});
+    test('Function declaration', (done) => {
+        var content = 'function name() {}';
+        var expected = 'function name () {}\n';
+		assertFormatter(content, expected, done);        
+    })
 });
