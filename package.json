@@ -2,7 +2,7 @@
   "name": "vscode-standard-format",
   "displayName": "JavaScript Standard Format",
   "description": "Converts your code into Standard JavaScript Format",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "chenxsan",
   "license": "MIT",
   "bugs": {
@@ -22,8 +22,19 @@
     "vscode": "^0.10.1"
   },
   "activationEvents": [
-    "onLanguage:javascript", "onLanguage:javascriptreact"
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onCommand:format.standard"    
   ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "format.standard",
+        "title": "Format code with standard-format"
+      }
+    ]
+  },
   "main": "./out/src/extension",
   "scripts": {
     "vscode:prepublish": "node ./node_modules/vscode/bin/compile",

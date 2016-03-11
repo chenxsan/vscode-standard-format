@@ -4,6 +4,13 @@ This extension adds [Standard format](https://github.com/maxogden/standard-forma
 
 Please only use it when you are ok with [JavaScript Standard Style](http://standardjs.com/).
 
+## Changes
+
+### 0.0.6 (2016-02-12)
+
+1. Added a new command to workaround the [problem](https://github.com/chenxsan/vscode-standard-format/issues/1) with the latest Visual Studio Code 0.10.10
+
+
 ## Installation
 
 1. Press `F1` to bring up Command Palette
@@ -15,7 +22,7 @@ Please only use it when you are ok with [JavaScript Standard Style](http://stand
 ## Usage
 
 1. Press `F1` to bring up Command Palette
-2. Search for `Format Code` and click it
+2. Search for `Format code with standard-format` and click it
 3. Done
 
 ## License
