@@ -46,17 +46,12 @@ export function activate(context: vscode.ExtensionContext) {
       return format(document, new vscode.Range(start, end), options)
     }
   }));
-  context.subscriptions.push(vscode.commands.registerCommand('format.standard', () => {
-    var editor = vscode.window.activeTextEditor;
-    var document = editor.document;
-    if (!editor) {
-      return; // No open text editor
-    }
-    var selection = editor.selection;
+  context.subscriptions.push(vscode.commands.registerTextEditorCommand('format.standard', (textEditor, edit) => {
+    var { document, selection } = textEditor
     var start;
     var end;
     if (selection.start.line === selection.end.line && selection.start.character === selection.end.character) {
-      // whole document
+      // no selections, then whole document
        start = new vscode.Position(0, 0);
        end = new vscode.Position(document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length);
     } else {
@@ -68,8 +63,6 @@ export function activate(context: vscode.ExtensionContext) {
     var content = document.getText(range);
     var formatted = standardFormat.transform(content);
     var result: vscode.TextEdit[] = [];
-    editor.edit((editor) => {
-      editor.replace(range, formatted)
-    })
+    edit.replace(range, formatted);
   }))
 }

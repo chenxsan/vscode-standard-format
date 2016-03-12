@@ -2,7 +2,7 @@
   "name": "vscode-standard-format",
   "displayName": "JavaScript Standard Format",
   "description": "Converts your code into Standard JavaScript Format",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "chenxsan",
   "license": "MIT",
   "bugs": {

@@ -6,11 +6,16 @@ Please only use it when you are ok with [JavaScript Standard Style](http://stand
 
 ## Changes
 
-### 0.0.7 (2016-02-12)
+### 0.0.8 (2016-03-13)
+
+1. Optimized code
+2. Fixed readme
+
+### 0.0.7 (2016-03-12)
 
 1. Added keybindings notes.
 
-### 0.0.6 (2016-02-12)
+### 0.0.6 (2016-03-12)
 
 1. Added a new command to workaround the [problem](https://github.com/chenxsan/vscode-standard-format/issues/1) with the latest Visual Studio Code 0.10.10
 
@@ -27,7 +32,9 @@ Please only use it when you are ok with [JavaScript Standard Style](http://stand
 
 1. Press `F1` to bring up Command Palette
 2. Search for `Format code with standard-format` and click it
-3. Done
+3. It will format the whole document
+
+You can also format only those you selects.
 
 ## Keybinding
 
