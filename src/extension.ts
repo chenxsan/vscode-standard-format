@@ -34,6 +34,16 @@ export function format(document: vscode.TextDocument, range: vscode.Range, optio
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
+  // format on save
+  vscode.workspace.onDidSaveTextDocument((document: vscode.TextDocument) => {
+    if (document.languageId !== 'javascript') return
+    var standardFormatConfig = vscode.workspace.getConfiguration('standardFormat')
+    if (standardFormatConfig && standardFormatConfig["formatOnSave"]) {
+      return vscode.commands.executeCommand('format.standard')      
+    }
+
+  })
+
   context.subscriptions.push(vscode.languages.registerDocumentFormattingEditProvider('javascript', {
     provideDocumentFormattingEdits: (document, options, token) => {
       return format(document, null, options)

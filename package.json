@@ -33,7 +33,18 @@
         "command": "format.standard",
         "title": "Format code with standard-format"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "standard-format configuration",
+      "properties": {
+        "standardFormat.formatOnSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether standard-format should format code on save"
+        }
+      }
+    }
   },
   "main": "./out/src/extension",
   "scripts": {
