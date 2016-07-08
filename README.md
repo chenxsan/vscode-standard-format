@@ -6,7 +6,7 @@ Please only use it when you are ok with [JavaScript Standard Style](http://stand
 
 ## Changes
 
-### 0.09 (2016-07-08)
+### 0.0.9 (2016-07-08)
 
 1. add `standardFormat.formatOnSave` configuration.
 
