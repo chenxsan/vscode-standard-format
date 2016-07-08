@@ -8,7 +8,7 @@ Please only use it when you are ok with [JavaScript Standard Style](http://stand
 
 ### 0.09 (2016-07-08)
 
-1. add `standardFormat.saveOnFormat` configuration.
+1. add `standardFormat.formatOnSave` configuration.
 
 ### 0.0.8 (2016-03-13)
 
