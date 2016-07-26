@@ -6,6 +6,10 @@ Please only use it when you are ok with [JavaScript Standard Style](http://stand
 
 ## Changes
 
+### 0.0.10 (2016-07-26)
+
+1. update `standard-format` to 2.2.2, with better support of jsx format - thanks [@thewei](https://github.com/thewei)
+
 ### 0.0.9 (2016-07-08)
 
 1. add `standardFormat.formatOnSave` configuration.
