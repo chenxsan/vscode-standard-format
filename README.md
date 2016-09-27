@@ -1,6 +1,6 @@
 # VS Code JavaScript Standard Format
 
-**Notice: Since [standard-format](https://github.com/maxogden/standard-format#important-note) might be deprecated later. Please consider using [vscode-standardjs](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs) now. We just added a new `Format code with standard` command running the built in `standard --fix` since standardjs v8.0.0.**
+**Notice: Since [standard-format](https://github.com/maxogden/standard-format#important-note) might be deprecated later. Please consider using [vscode-standardjs](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs) now. We just forked a new one from vscode-eslint.**
 
 This extension adds [Standard format](https://github.com/maxogden/standard-format) function to JavaScript.
 
